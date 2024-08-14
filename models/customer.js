@@ -22,6 +22,12 @@ const Customer = sequelize.define('tbl_customers', {
   modify_date: {
     type: DataTypes.DATE,
   },
+  cust_id: {
+    type: DataTypes.INTEGER,
+    unique: true, 
+    allowNull: false,
+    autoIncrement: true,
+  },
   cust_name: {
     type: DataTypes.STRING,
   },

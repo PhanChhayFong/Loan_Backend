@@ -23,6 +23,12 @@ const Loan = sequelize.define('tbl_loans', {
   modify_date: {
     type: DataTypes.DATE,
   },
+  loan_id: {
+    type: DataTypes.INTEGER,
+    unique: true, 
+    allowNull: false,
+    autoIncrement: true,
+  },
   employment_status: {
     type: DataTypes.STRING,
   },
